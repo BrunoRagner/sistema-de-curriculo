@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Document</title>
+
+
+<style>
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: #4455eefd;
+  font-family: "Roboto", sans-serif;
+  
+}
+.container {
+  display: flex;
+ 
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  left: 400%;
+  
+}
+.containe {
+  display: flex;
+ 
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  left: 400%;
+  
+}
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tag-teal {
+  background-color: #47bcd4;
+}
+.tag-purple {
+  background-color: #5e76bf;
+}
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+.user {
+  display: flex;
+  margin-top: auto;
+  
+}
+
+.user img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.user-info h5 {
+  margin: 0;
+}
+.user-info small {
+  color: #545d7a;
+}
+  
+.topnav 
+   {
+      overflow: hidden;
+       background-color: #4455eefd;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f8f8f8;
+      font-size: 35px;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .active {
+      background-color: #4455eefd;
+      color: rgb(238, 227, 227);
+    }
+    
+    .topnav .icon {
+      display: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 17px;    
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .topnav a:hover, .dropdown:hover .dropbtn {
+      background-color: #313da8fd;
+      color: white;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: rgb(158, 43, 43);
+      color: black;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+      }
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .topnav.responsive .dropdown {float: none;}
+      .topnav.responsive .dropdown-content {position: relative;}
+      .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+
+</style>
+    
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="/" class="active">Inicio</a>
+ 
+    <a href="/vaga">Vagas</a>
+    <a href="/contatos">Contatos</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <img src="/static/obra.jpg" alt="rover" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-teal">costrução civio</span>
+        <h4>
+        04 Vaga para pedreiro  Natal-Rn  
+        </h4>
+        <a href="/vaga_pedreiro">ver detalher</a>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet eligendi temporibus quia eaque, non ab porro vel provident aliquam alias voluptatum minus ea quod nemo sit eius omnis natus similique?
+        </p>
+       
+        <div class="user">
+          
+          <div class="user-info">
+            <p>envie o seu Curriculo</p>
+          <form action = "http://localhost:5000/uploader" method = "POST" width="220" height="80" id="imgpos"
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit">
+          </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <img src="/static/obra.jpg" alt="rover" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-teal">costrução civio</span>
+        <h4>
+         03 Vaga para ureia seca Natal-Rn 
+        </h4>
+        <a href="/vaga_pedreiro">ver detalher</a>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet eligendi temporibus quia eaque, non ab porro vel provident aliquam alias voluptatum minus ea quod nemo sit eius omnis natus similique?
+        </p>
+       
+        <div class="user">
+          
+          <div class="user-info">
+            <p>envie o seu Curriculo</p>
+          <form action = "http://localhost:5000/uploader" method = "POST" width="220" height="80" id="imgpos"
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit">
+          </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <img src="/static/obra.jpg" alt="rover" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-teal">eletrica</span>
+        <h4>
+         01 Vaga para tecnico eletrotecino Santa Catarina -SC
+        </h4>
+        <a href="/vaga_pedreiro">ver detalher</a>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet eligendi temporibus quia eaque, non ab porro vel provident aliquam alias voluptatum minus ea quod nemo sit eius omnis natus similique?
+        </p>
+       
+        <div class="user">
+          
+          <div class="user-info">
+            <p>envie o seu Curriculo</p>
+          <form action = "http://localhost:5000/uploader" method = "POST" width="220" height="80" id="imgpos"
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit">
+          </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <img src="/static/obra.jpg" alt="rover" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-teal">acabaminto</span>
+        <h4>
+         02 Vaga para Pintor      Natal-Rn
+        </h4>
+        <a href="/vaga_pedreiro">ver detalher</a>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet eligendi temporibus quia eaque, non ab porro vel provident aliquam alias voluptatum minus ea quod nemo sit eius omnis natus similique?
+        </p>
+       
+        <div class="user">
+          
+          <div class="user-info">
+            <p>envie o seu Curriculo</p>
+          <form action = "http://localhost:5000/uploader" method = "POST" width="220" height="80" id="imgpos"
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit">
+          </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <img src="/static/obra.jpg" alt="rover" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-teal">costrução civio</span>
+        <h4>
+          03 Vaga para ureia seca   Santa Catarina - SC
+        </h4>
+        <a href="/vaga_pedreiro">ver detalher</a>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet eligendi temporibus quia eaque, non ab porro vel provident aliquam alias voluptatum minus ea quod nemo sit eius omnis natus similique?
+        </p>
+       
+        <div class="user">
+          
+          <div class="user-info">
+            <p>envie o seu Curriculo</p>
+          <form action = "http://localhost:5000/uploader" method = "POST" width="220" height="80" id="imgpos"
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit">
+          </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <img src="/static/obra.jpg" alt="carpinteiro" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-teal">costrução civio</span>
+        <h4>
+         Vaga para carpinteiro  Santa Catarina SC
+        </h4>
+        <a href="/vaga_pedreiro">ver detalher</a>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet eligendi temporibus quia eaque, non ab porro vel provident aliquam alias voluptatum minus ea quod nemo sit eius omnis natus similique?
+        </p>
+       
+        <div class="user">
+          
+          <div class="user-info">
+            <p>envie o seu Curriculo</p>
+          <form action = "http://localhost:5000/uploader" method = "POST" width="220" height="80" id="imgpos"
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit">
+          </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <img src="/static/obra.jpg" alt="rover" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-teal">costrução civio</span>
+        <h4>
+         Vaga para pedreiro 
+        </h4>
+        <a href="/vaga_pedreiro">ver detalher</a>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet eligendi temporibus quia eaque, non ab porro vel provident aliquam alias voluptatum minus ea quod nemo sit eius omnis natus similique?
+        </p>
+       
+        <div class="user">
+          
+          <div class="user-info">
+            <p>envie o seu Curriculo</p>
+          <form action = "http://localhost:5000/uploader" method = "POST" width="220" height="80" id="imgpos"
+            enctype = "multipart/form-data">
+           <button> <input type = "file" name = "file" /></button>
+            <input type = "submit">
+          </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <img src="/static/obra.jpg" alt="rover" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-teal">costrução civio</span>
+        <h4>
+         Vaga para pedreiro 
+        </h4>
+        <a href="/vaga_pedreiro">ver detalher</a>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet eligendi temporibus quia eaque, non ab porro vel provident aliquam alias voluptatum minus ea quod nemo sit eius omnis natus similique?
+        </p>
+       
+        <div class="user">
+          
+          <div class="user-info">
+            <p>envie o seu Curriculo</p>
+          <form action = "http://localhost:5000/uploader" method = "POST" width="220" height="80" id="imgpos"
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit">
+          </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+</body>
+</html>
+                                

@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
-</head>
+
 <style>
     body {
-      margin:0;font-family:Arial;
-      background-image: url('/static/obra.jpg');
+      font-family: "Roboto", sans-serif;
+      background-color: #4455eefd;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: 100% 100%;
@@ -20,20 +20,28 @@
     
     
     }
-    #imgpos {
-		position:absolute;
-		left:50%;
-		top:50%;
-		margin-left:-300px;
-		margin-top:-100px;
-    overflow: hidden;
-    background-color: rgba(51, 51, 51, 0);
-    font-size:38px;
-		}
+    h1 {
+      color: #f8f8f8;
+
+      right: 100px;
+    }
+    p{
+      color: #f8f8f8;
+    }
+    .imgpos{
+      text-align: center;
+      position: fixed; 
+      bottom: 300px; 
+      left: 20px; 
+      right: 20px;
+      
+    }
+      
+	    
     
     .topnav {
       overflow: hidden;
-      background-color: rgba(51, 51, 51, 0);
+      background-color: #4455eefd;
     }
     
     .topnav a {
@@ -48,7 +56,7 @@
     }
     
     .active {
-      background-color: #f2f2f200;
+      background-color: #4455eefd;
       color: rgb(238, 227, 227);
     }
     
@@ -91,7 +99,7 @@
     }
     
     .topnav a:hover, .dropdown:hover .dropbtn {
-      background-color: #555;
+      background-color: #313da8fd;
       color: white;
     }
     
@@ -139,17 +147,18 @@
     <body>
     
     <div class="topnav" id="myTopnav">
-      <a href="/" class="active">Home</a>
-      <a href="/upload">enviar curriculo</a>
-     
-    
-      <a href="/contatos">contatos</a>
+      <a href="/" class="active">Inicio</a>
+   
+      <a href="/vaga">Vagas Abertas </a>
+      <a href="/contatos">Contatos</a>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-  <div id="imgpos">
-   <h1>Nossa Emgearia</h1>
-   <p>envie o seu curriculo</p>
+  <div class="imgpos">
+   <h1>Nossa Engenharia</h1>
+   <p>envie o seu curriculo é faça parte da nossa Historia</p>
+   
   </div>
+  
     <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");

@@ -6,17 +6,19 @@ Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
 <title>Posicionar um objeto na tela</title>
 <style type="text/css">
 	#imgpos {
+    font-size: larger;
 		position:absolute;
 		left:50%;
 		top:50%;
-		margin-left:-110px;
-		margin-top:-40px;
+		margin-left:-200px;
+		margin-top:40px;
     overflow: hidden;
-    background-color: rgba(51, 51, 51, 0);
+    background-color: rgba(148, 24, 24, 0.986);
 		}
-        body {
-      margin:0;font-family:Arial;
-      background-image: url('/static/obra.jpg');
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: royalblue;
+ 
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: 100% 100%;
@@ -138,7 +140,7 @@ Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
-<form action = "https://uxumtu.deta.dev/upload" method = "POST" width="220" height="80" id="imgpos"
+<form action = "http://localhost:5000/uploader" method = "POST" width="220" height="80" id="imgpos"
       enctype = "multipart/form-data">
       <input type = "file" name = "file" />
       <input type = "submit"/>
