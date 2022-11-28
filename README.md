@@ -2,4 +2,4 @@
 sistema desenvolvido em Flask para envio de curriculo 
 
 
-https://nossa-engenharia.deta.dev/
+https://nossa.deta.dev/
